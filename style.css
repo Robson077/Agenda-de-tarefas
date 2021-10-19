@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(90deg, #7F00FF 0%, #E100FF 100%);
+}
+
+#adicionar {
+    background: #8052EC;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    padding: 0 15px;
+    color: #FFFFFF;
+    font-size: 17px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+#adicionar:hover {
+    opacity: 0.8;
+}
+
+#adicionar:active {
+    opacity: 0.6;
+}
+
+.container {
+    background: #FFFFFF;
+    width: 541px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+
+#input-principal {
+    width: 342px;
+    height: 40px;
+    border: 2px solid rgba(209, 211, 212, 0.4);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#tarefas {
+    width: 100%;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.item-tarefa {
+    background: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 45px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.nome-tarefa {
+    color: #000000;
+    font-size: 15px;
+}
+
+.delete {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fa-trash {
+    color: red;
+}
+
+.foguete {
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fa-rocket {
+    color: #4F0FC5;
+}
+
+.item-tarefa:hover .delete{
+    opacity: 1;
+}
+
+.item-tarefa:hover .foguete{
+    opacity: 1;
+}
+
+.concluido {
+    background: #d4f88d;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 600px){
+    .container {
+        width: 100vw;
+
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 505px){
+    .container {
+        width: 100vw;
+
+        margin-top: 20px;
+    }
+
+    
+
+    #adicionar {
+        margin-top: 20px;
+        margin-right: 37%;
+    }
+    
+    #input-principal {
+        margin-left: 7px;
+        
+    }
+
+    .item-tarefa {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 374px){
+    .container {
+        width: 100vw;
+
+        margin-top: 20px;
+    }
+
+    
+
+    #adicionar {
+        margin-top: 20px;
+        margin-right: 37%;
+    }
+    
+    #input-principal {
+        
+        width: 280px;
+    }
+
+    .item-tarefa {
+        margin-top: 90px;
+    }
+}
